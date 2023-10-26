@@ -15,5 +15,5 @@ Pod::Spec.new do |s|
   s.dependency     'Expecta', '~> 1.0'
   s.dependency     'Specta', '~> 2.0'
   
-  s.pod_target_xcconfig = { 'ENABLE_BITCODE' => 'NO' }
+  s.pod_target_xcconfig = { 'ENABLE_BITCODE' => 'NO', 'GCC_PREPROCESSOR_DEFINITIONS' => 'SWIFT_PACKAGE=1' }
 end
